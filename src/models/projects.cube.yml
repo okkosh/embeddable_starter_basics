@@ -1,0 +1,54 @@
+cubes:
+  - name: projects
+    sql_table: public.hinges_api_project
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+        public: true
+
+      - name: job_number
+        sql: job_number
+        type: string
+
+      - name: job_name
+        sql: job_name
+        type: string
+
+      - name: contract_value
+        sql: contract_value
+        type: string
+
+      - name: contractor
+        sql: contractor
+        type: string
+
+      - name: city
+        sql: city
+        type: string
+
+      - name: material_install
+        sql: material_install
+        type: string
+
+      - name: estimator
+        sql: estimator
+        type: string
+
+      - name: project_manager
+        sql: project_manager
+        type: string
+
+      - name: project_architect
+        sql: project_architect
+        type: string
+
+      - name: project_status
+        sql: project_status
+        type: string
+
+    pre_aggregations:
+    # Pre-aggregation definitions go here.
+    # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
